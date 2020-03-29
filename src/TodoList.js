@@ -17,10 +17,10 @@ const TodoList = ({ todos, deleteTodo, editTodo }) => {
               }}
             >
               {" "}
-              (delete{" "}
+              <b>delete</b> {" "}
             </a>
             <a href="#/" onClick={() => editTodo(todo.id)}>
-              , edit){" "}
+              <b>edit</b>{" "}
             </a>
           </li>
         ))}

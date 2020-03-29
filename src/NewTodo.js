@@ -5,18 +5,18 @@ function NewTodo(props) {
 
   const [todo, setTodo] = useState(props.nextTodo);
 
-  const saveTodo = evt => {
+  const saveTodo = e => {
     if (todo.todoText === "") {
       return;
     }
     props.addTodo(todo);
-    evt.preventDefault();
+    e.preventDefault();
   };
 
   useEffect(() => setTodo({ ...props.nextTodo }), [props.nextTodo]);
 
-  const onChange = evt => {
-    const val = evt.target.value;
+  const onChange = e => {
+    const val = e.target.value;
     todo.todoText = val;
     setTodo({ ...todo });
   };
