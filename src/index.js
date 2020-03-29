@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import App2 from './App2';
+import uuid from "uuid/v1";
 
 let app = <App />
 const DontUseMeForReal = () => {
